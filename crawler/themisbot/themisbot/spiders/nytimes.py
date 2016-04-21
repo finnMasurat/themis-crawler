@@ -24,4 +24,4 @@ class NyTimesSpider(CrawlSpider):
         item['content'] = response.css('div.story-body').xpath('//p/text()').extract()
         item['author'] = response.css("#story-meta-footer span.byline-author::attr('data-byline-name')").extract()
         item['date'] = response.css("#story-meta-footer time.dateline::attr('datetime')").extract()
-        print response.url
+        return item
