@@ -64,7 +64,7 @@ USER_AGENT = 'themisbot (+http://www.themisbot.com)'
 
 ITEM_PIPELINES = {
     'themisbot.pipelines.CleanUpPipeline': 100,
-    'themisbot.pipelines.OrchestratePipeline': 200
+    'themisbot.pipelines.RethinkDBPipeline': 200
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

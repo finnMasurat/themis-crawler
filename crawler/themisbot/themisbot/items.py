@@ -17,3 +17,4 @@ class NyTimesItem(scrapy.Item):
     content = scrapy.Field()
     author = scrapy.Field()
     date = scrapy.Field()
+    url = scrapy.Field()
