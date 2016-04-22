@@ -63,7 +63,6 @@ USER_AGENT = 'themisbot (+http://www.themisbot.com)'
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 
 ITEM_PIPELINES = {
-    'themisbot.pipelines.CleanUpPipeline': 100,
     'themisbot.pipelines.RethinkDBPipeline': 200
 }
 
