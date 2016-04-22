@@ -22,3 +22,4 @@ apt-get -y install python-dev python-pip libxml2-dev libxslt1-dev zlib1g-dev lib
 
 pip install Scrapy
 pip install porc
+pip install rethinkdb
