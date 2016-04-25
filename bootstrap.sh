@@ -1,12 +1,12 @@
 #!/bin/bash
 
+apt-get update
 
 cd ~
 echo "export LC_ALL=\"en_US.UTF-8\"" >> .bashrc
 echo "export LC_CTYPE=\"en_US.UTF-8\"" >> .bashrc
 
 dpkg-reconfigure locales
-
 
 #######
 
@@ -22,3 +22,4 @@ apt-get -y install python-dev python-pip libxml2-dev libxslt1-dev zlib1g-dev lib
 
 pip install Scrapy
 pip install porc
+pip install rethinkdb
